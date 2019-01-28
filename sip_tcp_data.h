@@ -1,6 +1,7 @@
 #ifndef SIP_TCP_DATA_H
 #define SIP_TCP_DATA_H
 
+#include <sys/types.h>
 #include "tcpreassembly.h"
 
 

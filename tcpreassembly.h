@@ -1,6 +1,7 @@
 #ifndef TCP_REASSEMBLY_H
 #define TCP_REASSEMBLY_H
 
+#include <sys/types.h>
 #include <arpa/inet.h>
 #include <netinet/in.h>
 #include <netinet/ip.h>

@@ -333,7 +333,9 @@ int Mgmt_unpausecall(Mgmt_params *params);
 int Mgmt_setverbparam(Mgmt_params *params);
 int Mgmt_set_pcap_stat_period(Mgmt_params *params);
 int Mgmt_memcrash_test(Mgmt_params *params);
+#ifndef FREEBSD
 int Mgmt_malloc_trim(Mgmt_params *params);
+#endif
 
 
 int (* MgmtFuncArray[])(Mgmt_params *params) = {
@@ -434,7 +436,9 @@ int (* MgmtFuncArray[])(Mgmt_params *params) = {
 	Mgmt_setverbparam,
 	Mgmt_set_pcap_stat_period,
 	Mgmt_memcrash_test,
+#ifndef FREEBSD
 	Mgmt_malloc_trim,
+#endif
 	NULL
 };
 

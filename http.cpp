@@ -1,5 +1,6 @@
 #include <iostream>
 #include <sstream>
+#include <sys/types.h>
 #include <net/ethernet.h>
 
 #include "http.h"
